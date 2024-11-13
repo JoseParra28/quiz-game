@@ -8,12 +8,29 @@
     <meta name="keywords" content="runway-models-agency">
     <link rel="stylesheet" href="/style.css">
     <link rel="models-page" href="/second.html">
-    <title>Runway Models</title>
+    <title>Guess my number</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
-
 <body>
-    <h1>test</h1>
+    <header>
+        <h1 class="test">Guess my number!</h1>
+        <p class="between">(Between 1 and 20)</p>
+        <button class="btn again">Replay</button>
+        <div class="number">...?</div>
+      </header>
+      <main>
+        <section class="left">
+          <input type="number" class="guess" />
+          <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">🥈 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </main>
 
 </body>
 
