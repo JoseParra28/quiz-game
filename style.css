@@ -115,3 +115,7 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+.hidden {
+  display: none;
+}

@@ -20,7 +20,9 @@ let questionsBtn = document.querySelector(".answer-btn1");
 let answers = ["Jose", "Carlos", "Pepe", "Sebastian"]
 
 questionsBtn.addEventListener("click", function(){
+    questions.classList.add(".hidden")
     selectAns()
+
 })
 
 
@@ -31,24 +33,26 @@ function selectAns(){
         document.body.appendChild(buttons)
 
     buttons.addEventListener("click", function(){
-        console.log(this.innerHTML)
+        const selectectBtn = this.innerHTML
+
+        switch (selectectBtn) {
+            case "Jose":
+                questions.innerHTML = "Well done"
+                break;
+                case "Carlos":
+                    questions.innerHTML = "Not correct"
+                    break;
+                    case "Pepe":
+                        questions.innerHTML = "Not correct again"
+                        break;
+                        case "Sebastian":
+                            questions.innerHTML = "Not correct again and again"
+                            break;
+        
+            default:
+                console.log("You must select") 
+                break;
+        }
     })
      }
 }
-
-// var btn = document.querySelector(".answer-btn1");
-// var optionText = ["Button 1", "Button 2", "Button 3", "Button 4"];
-
-// btn.addEventListener("click", function(){
-//   buttonSelect();
-// })
-
-// function buttonSelect() {
-//   for(var i = 0; i < optionText.length; i++){
-//     var option = document.createElement("button");
-//     option.innerHTML = optionText[i];
-//     document.body.appendChild(option);
-
-
-//   }
-// }
