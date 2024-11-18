@@ -27,8 +27,12 @@ questionsBtn.addEventListener("click", function(){
 function selectAns(){
     for (let i = 0; i <answers.length; i++){
         let buttons =  document.createElement("button");
-        buttons.innerHTML.answers[i];
-        buttons.appendChild(answers)
+        buttons.innerHTML = answers[i];
+        document.body.appendChild(buttons)
+
+    buttons.addEventListener("click", function(){
+        console.log(this.innerHTML)
+    })
      }
 }
 
@@ -44,5 +48,7 @@ function selectAns(){
 //     var option = document.createElement("button");
 //     option.innerHTML = optionText[i];
 //     document.body.appendChild(option);
+
+
 //   }
 // }
