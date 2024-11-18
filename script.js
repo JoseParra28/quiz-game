@@ -15,44 +15,44 @@
 //     console.log(guess)
 // })
 
-const questions = document.querySelector(".question");
-let questionsBtn = document.querySelector(".answer-btn1");
-let answers = ["Jose", "Carlos", "Pepe", "Sebastian"]
+// const questions = document.querySelector(".question");
+// let questionsBtn = document.querySelector(".answer-btn1");
+// let answers = ["Jose", "Carlos", "Pepe", "Sebastian"]
 
-questionsBtn.addEventListener("click", function(){
-    questions.classList.add(".hidden")
-    selectAns()
+// questionsBtn.addEventListener("click", function(){
+//     questions.classList.add(".hidden")
+//     selectAns()
 
-})
+// })
 
 
-function selectAns(){
-    for (let i = 0; i <answers.length; i++){
-        let buttons =  document.createElement("button");
-        buttons.innerHTML = answers[i];
-        document.body.appendChild(buttons)
+// function selectAns(){
+//     for (let i = 0; i <answers.length; i++){
+//         let buttons =  document.createElement("button");
+//         buttons.innerHTML = answers[i];
+//         document.body.appendChild(buttons)
 
-    buttons.addEventListener("click", function(){
-        const selectectBtn = this.innerHTML
+//     buttons.addEventListener("click", function(){
+//         const selectectBtn = this.innerHTML
 
-        switch (selectectBtn) {
-            case "Jose":
-                questions.innerHTML = "Well done"
-                break;
-                case "Carlos":
-                    questions.innerHTML = "Not correct"
-                    break;
-                    case "Pepe":
-                        questions.innerHTML = "Not correct again"
-                        break;
-                        case "Sebastian":
-                            questions.innerHTML = "Not correct again and again"
-                            break;
+//         switch (selectectBtn) {
+//             case "Jose":
+//                 questions.innerHTML = "Well done"
+//                 break;
+//                 case "Carlos":
+//                     questions.innerHTML = "Not correct"
+//                     break;
+//                     case "Pepe":
+//                         questions.innerHTML = "Not correct again"
+//                         break;
+//                         case "Sebastian":
+//                             questions.innerHTML = "Not correct again and again"
+//                             break;
         
-            default:
-                console.log("You must select") 
-                break;
-        }
-    })
-     }
-}
+//             default:
+//                 console.log("You must select") 
+//                 break;
+//         }
+//     })
+//      }
+// }
